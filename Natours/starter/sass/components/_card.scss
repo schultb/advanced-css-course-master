@@ -133,9 +133,24 @@
         rgba($color-tertiary-dark, 0.85)
       );
     }
+  }
+  &__details {
+    padding: 3rem;
 
-    &__details {
-      padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
     }
   }
 
@@ -164,20 +179,21 @@
     font-size: 6rem;
     font-weight: 100;
   }
-}
-// Card front text details--couldn't get it to work the other way
-ul {
-  list-style: none;
-  width: 80%;
-  margin: 0 auto;
 
-  li {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 1rem;
+  // Card front text details--couldn't get it to work the other way
+  // .test1 {
+  //   list-style: none;
+  //   width: 80%;
+  //   margin: 0 auto;
 
-    &:not(:last-child) {
-      border-bottom: 1px solid $color-grey-light-2;
-    }
-  }
+  //   .test2 {
+  //     text-align: center;
+  //     font-size: 1.5rem;
+  //     padding: 1rem;
+
+  //     &:not(:last-child) {
+  //       border-bottom: 1px solid $color-grey-light-2;
+  //     }
+  //   }
+  // }
 }

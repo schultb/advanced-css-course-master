@@ -100,22 +100,22 @@ body {
     margin-bottom: 3rem; }
 
 .u-center-text {
-  text-align: center !important; }
+  text-align: center; }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem !important; }
+  margin-bottom: 1.5rem; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem !important; }
+  margin-bottom: 4rem; }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem !important; }
+  margin-bottom: 8rem; }
 
 .u-margin-top-big {
-  margin-top: 8rem !important; }
+  margin-top: 8rem; }
 
 .u-margin-top-huge {
-  margin-top: 10rem !important; }
+  margin-top: 10rem; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -256,8 +256,18 @@ body {
       background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85)); }
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
-    .card__heading-span__details {
-      padding: 3rem; }
+  .card__details {
+    padding: 3rem; }
+    .card__details ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card__details ul li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem; }
+        .card__details ul li:not(:last-child) {
+          border-bottom: 1px solid #eee; }
   .card__cta {
     position: absolute;
     top: 6%;
@@ -275,17 +285,6 @@ body {
   .card__price-value {
     font-size: 6rem;
     font-weight: 100; }
-
-ul {
-  list-style: none;
-  width: 80%;
-  margin: 0 auto; }
-  ul li {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 1rem; }
-    ul li:not(:last-child) {
-      border-bottom: 1px solid #eee; }
 
 .composition {
   position: relative; }
@@ -553,6 +552,52 @@ ul {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
+
+.navigation__checkbox {
+  display: none; }
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 2000; }
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  z-index: 1000;
+  transform: scale(80); }
+
+.navigation__nav {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1500; }
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  list-style: none;
+  text-align: center; }
+
+.navigation__link {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .section-about {
   background-color: #f7f7f7;
