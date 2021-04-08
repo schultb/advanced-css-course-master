@@ -37,6 +37,8 @@ $breakpoint arguement choices:
 
 // 1 em = 16px
 
+// ORDER: BASE + TYPOGRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENTS
+
 //600px
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
