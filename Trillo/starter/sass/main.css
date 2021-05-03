@@ -339,6 +339,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.paragraph {
+  font-size: 1.4rem;
+}
+
 .list {
   list-style: none;
   font-size: 1.4rem;
@@ -351,6 +355,7 @@ body {
 }
 
 .list__item {
+  font-size: 1.4rem;
   flex: 0 0 50%;
   margin-bottom: 0.7rem;
 }
@@ -376,6 +381,7 @@ body {
 }
 
 .recommend__count {
+  font-size: 1.3rem;
   margin-right: auto;
 }
 
