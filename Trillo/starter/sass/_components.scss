@@ -13,7 +13,7 @@
 
   &__input {
     font-family: inherit;
-    font-size: inherit;
+    // font-size: inherit;
     color: inherit;
     background-color: var(--color-grey-light-2);
     border: none;
@@ -355,8 +355,8 @@
     margin-right: auto;
   }
 
-  &__friends {
-  }
+  // &__friends {
+  // }
 
   &__photo {
     box-sizing: content-box;
@@ -380,7 +380,7 @@
   position: relative;
 
   &__text {
-    font-size: 1rem;
+    // font-size: 1rem;
     margin-bottom: 2rem;
     z-index: 10;
     position: relative;
@@ -411,7 +411,7 @@
   }
 
   &__user-date {
-    font-size: 1rem;
+    // font-size: 1rem;
     color: var(--color-grey-dark-3);
   }
   &__rating {
@@ -464,7 +464,7 @@
   cursor: pointer;
 
   & > * {
-    font-size: inherit;
+    // font-size: inherit;
     display: inline-block;
     height: 100%;
     width: 100%;

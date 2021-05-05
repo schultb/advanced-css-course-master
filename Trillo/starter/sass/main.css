@@ -40,11 +40,17 @@ Grey dark 3: #999
 *::before,
 *::after {
   box-sizing: inherit;
-  font-size: 62.5%;
 }
 
 html {
   box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 68.75em) {
+  html {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -72,7 +78,6 @@ body {
 
 .search__input {
   font-family: inherit;
-  font-size: inherit;
   color: inherit;
   background-color: var(--color-grey-light-2);
   border: none;
@@ -416,7 +421,6 @@ body {
 }
 
 .review__text {
-  font-size: 1rem;
   margin-bottom: 2rem;
   z-index: 10;
   position: relative;
@@ -447,7 +451,6 @@ body {
 }
 
 .review__user-date {
-  font-size: 1rem;
   color: var(--color-grey-dark-3);
 }
 
@@ -495,7 +498,6 @@ body {
 }
 
 .btn > * {
-  font-size: inherit;
   display: inline-block;
   height: 100%;
   width: 100%;
@@ -539,6 +541,14 @@ body {
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
   min-height: 50rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .container {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .header {
